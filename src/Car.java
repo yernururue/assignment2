@@ -1,5 +1,4 @@
-public abstract class Car extends Vehicle {
-
+public class Car extends Vehicle {
     int doors;
     public String fueltype;
 
