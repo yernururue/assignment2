@@ -1,6 +1,7 @@
 public abstract class Vehicle {
-    private String brand;
+    protected String brand;
     protected int year;
+    protected Driver driver;
     //getters
     public String getBrand() {
         return brand;
@@ -24,9 +25,10 @@ public abstract class Vehicle {
     }
 
 
-    public Vehicle(String brand, int year) {
+    public Vehicle(String brand, int year, Driver driver) {
         this.brand = brand;
         this.year = year;
+        this.driver = driver;
     }
     public abstract void startEngine();
     public abstract void stopEngine();
