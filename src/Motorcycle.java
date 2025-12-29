@@ -1,5 +1,5 @@
 public class Motorcycle extends Vehicle{
-    boolean hasSidecar;
+    private boolean hasSidecar;
 
     public Motorcycle(String brand, int year, boolean hasSidecar, Driver driver) {
         super(brand, year, driver);

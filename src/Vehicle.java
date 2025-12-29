@@ -12,7 +12,7 @@ public abstract class Vehicle {
     }
 
     //setters
-    public void setBrand() {
+    public void setBrand(String brand) {
         if (brand != null) {
             this.brand = brand;
         }
@@ -21,6 +21,11 @@ public abstract class Vehicle {
     public void setYear(int year) {
         if (year >= 1885 && year <= 2025) {
             this.year = year;
+        }
+    }
+    public void setDriver(Driver driver) {
+        if (driver != null) {
+            this.driver = driver;
         }
     }
 

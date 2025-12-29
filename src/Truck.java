@@ -1,6 +1,6 @@
 public class Truck extends Vehicle{
-    double capacity;
-    int numAxles;
+    private double capacity;
+    private int numAxles;
     public Truck(String brand, int year, double capacity, int numAxles, Driver driver) {
         super(brand, year, driver);
         this.capacity = capacity;
