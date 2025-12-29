@@ -1,6 +1,7 @@
 public abstract class Vehicle {
     private String brand;
     protected int year;
+    //getters
     public String getBrand() {
         return brand;
     }
@@ -9,8 +10,15 @@ public abstract class Vehicle {
         return year;
     }
 
+    //setters
+    public void setBrand() {
+        if (brand != null) {
+            this.brand = brand;
+        }
+    }
+
     public void setYear(int year) {
-        if (year<1885 && year>2025) {
+        if (year >= 1885 && year <= 2025) {
             this.year = year;
         }
     }
